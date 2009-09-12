@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>virtualenv</Name>
+        <Summary xml:lang="tr">virtualenv yalıtılmış Python ortamları oluşturan bir araçtır.</Summary>
+        <Description xml:lang="tr">virtualenv kendi yükleme alanları olan ve bunları diğer virtualenv ortamları ile paylaşmayan (ve seçimli olarak yüklü evrensel kütüphaneleri de kullanmayarak) ortamlar oluşturur.</Description>
+    </Source>
+</PISI>
