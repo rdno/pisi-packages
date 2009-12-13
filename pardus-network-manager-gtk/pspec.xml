@@ -29,6 +29,7 @@
     <Name>network-manager-gtk</Name>
     <Files>
       <Path fileType="executable">/usr/bin</Path>
+      <Path fileType="lib">/usr/lib</Path>
       <Path fileType="doc">/usr/share/doc</Path>
       <Path fileType="data">/usr/share/locale</Path>
       <Path fileType="data">/usr/share/applications</Path>
