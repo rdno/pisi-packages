@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Maybe License
+# license:gpl v3
 #
 # Rıdvan Örsvuran <flasherdn@gmail.com>
 
@@ -21,4 +21,6 @@ def install():
     for lang in ["en",  "tr"]:
         pisitools.domo("po/%s.po" % lang, lang, "network_manager_gtk.mo")
     pisitools.rename("/usr/bin/network-manager-gtk.py", "network-manager-gtk")
+    #to avoid file conflicts
+    pisitools.remove("/usr/lib/python2.6/site-packages/asma/addons/__init__.py")
 
