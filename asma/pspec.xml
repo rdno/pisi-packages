@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>asma</Name>
+    <Homepage>http://flasherdn.appspot.com</Homepage>
+    <Packager>
+      <Name>Rıdvan Örsvuran</Name>
+      <Email>flasherdn@gmail.com</Email>
+    </Packager>
+    <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <PartOf> None</PartOf>
+    <Summary>Unified UI for manager-gtks</Summary>
+    <Summary xml:lang="tr">gtk yönetici programları için birleştirilmiş arayüz.</Summary>
+    <Description>Asma (All System MAnagers) is a center for *-manager-gtks.It brings together All System MAnagers.</Description>
+    <Description xml:lang="tr">Asma gtk ile yazılmış yöneticileri biraraya getiren bir merkez görevi görür.</Description>
+    <Archive type="targz" sha1sum="188c65ab56a99b442b265244c22ede07d73a0a96">
+    http://cloud.github.com/downloads/flasherdn/Asma/asma-0.1.tar.gz</Archive>
+    <BuildDependencies>
+      <Dependency>setuptools</Dependency>
+    </BuildDependencies>
+  </Source>
+
+  <Package>
+    <RuntimeDependecies>
+      <Dependency>pygtk</Dependency>
+    </RuntimeDependecies>
+    <Name>asma</Name>
+    <Files>
+      <Path fileType="executable">/usr/bin</Path>
+      <Path fileType="lib">/usr/lib</Path>
+      <Path fileType="doc">/usr/share/doc</Path>
+      <Path fileType="data">/usr/share/locale</Path>
+      <Path fileType="data">/usr/share/applications</Path>
+    </Files>
+<!--    <AdditionalFiles>
+      <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/asma.desktop">
+      asma.desktop</AdditionalFile>
+    </AdditionalFiles>-->
+  </Package>
+
+  <History>
+      <Update release="1">
+      <Date>2010-01-24</Date>
+      <Version>0.1</Version>
+      <Comment>Initial Version</Comment>
+      <Name>Rıdvan Örsvuran</Name>
+      <Email>flasherdn@gmail.com</Email>
+      </Update>
+  </History>
+</PISI>
