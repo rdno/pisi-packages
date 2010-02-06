@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>pardus-boot-manager-gtk</Name>
+    <Homepage>http://flasherdn.appspot.com</Homepage>
+    <Packager>
+      <Name>Rıdvan Örsvuran</Name>
+      <Email>flasherdn@gmail.com</Email>
+    </Packager>
+    <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <PartOf> None</PartOf>
+    <Summary>Boot Manager for Pardus</Summary>
+    <Summary xml:lang="tr">Pardus için Açılış Yöneticisi</Summary>
+    <Description>GTK port of Pardus's boot-manager.</Description>
+    <Description xml:lang="tr">Pardus'un Açılış Yöneticisinin gtk üzerinde yazılmış bir klonu.</Description>
+    <Archive type="targz" sha1sum="c559cd87d297f482c43b6f10a99909fa638931d9">
+http://cloud.github.com/downloads/flasherdn/pardus-boot-manager-gtk/pardus-boot-manager-gtk-0.1.tar.gz</Archive>
+    <BuildDependencies>
+      <Dependency>setuptools</Dependency>
+    </BuildDependencies>
+  </Source>
+
+  <Package>
+    <RuntimeDependecies>
+      <Dependency>pygtk</Dependency>
+    </RuntimeDependecies>
+    <Name>boot-manager-gtk</Name>
+    <Files>
+      <Path fileType="executable">/usr/bin</Path>
+      <Path fileType="lib">/usr/lib</Path>
+      <Path fileType="doc">/usr/share/doc</Path>
+      <Path fileType="data">/usr/share/locale</Path>
+      <Path fileType="data">/usr/share/applications</Path>
+    </Files>
+    <AdditionalFiles>
+      <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/boot-manager-gtk.desktop">
+      boot-manager-gtk.desktop</AdditionalFile>
+    </AdditionalFiles>
+  </Package>
+
+  <History>
+    <Update release="1">
+      <Date>2010-02-06</Date>
+      <Version>0.1</Version>
+      <Comment>Initial Version</Comment>
+      <Name>Rıdvan Örsvuran</Name>
+      <Email>flasherdn@gmail.com</Email>
+    </Update>
+  </History>
+
+</PISI>

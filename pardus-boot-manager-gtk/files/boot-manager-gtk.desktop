@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Boot Manager GTK
+Name[tr]=Açılış Yöneticisi GTK
+Comment=An application for managing boot loader.
+Comment[tr]=Ön yükleyici (GRUB) ayarlarını değiştirmenizi sağlayan bir uygulama.
+Exec=boot-manager-gtk
+Icon=computer
+Type=Application
+Categories=Application;Gtk;System;
