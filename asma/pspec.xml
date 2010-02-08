@@ -15,8 +15,8 @@
     <Summary xml:lang="tr">gtk yönetici programları için birleştirilmiş arayüz.</Summary>
     <Description>Asma (All System MAnagers) is a center for *-manager-gtks.It brings together All System MAnagers.</Description>
     <Description xml:lang="tr">Asma gtk ile yazılmış yöneticileri biraraya getiren bir merkez görevi görür.</Description>
-    <Archive type="targz" sha1sum="188c65ab56a99b442b265244c22ede07d73a0a96">
-    http://cloud.github.com/downloads/flasherdn/Asma/asma-0.1.tar.gz</Archive>
+    <Archive type="targz" sha1sum="8b532313539ba17893d146c08fb6f7aee90a6f5f">
+    http://cloud.github.com/downloads/flasherdn/Asma/asma-0.2.tar.gz</Archive>
     <BuildDependencies>
       <Dependency>setuptools</Dependency>
     </BuildDependencies>
@@ -33,20 +33,24 @@
       <Path fileType="doc">/usr/share/doc</Path>
       <Path fileType="data">/usr/share/locale</Path>
       <Path fileType="data">/usr/share/applications</Path>
+      <Path fileType="data">/usr/share/icons</Path>
     </Files>
-<!--    <AdditionalFiles>
-      <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/asma.desktop">
-      asma.desktop</AdditionalFile>
-    </AdditionalFiles>-->
   </Package>
 
   <History>
-      <Update release="1">
+    <Update release="2">
+      <Date>2010-02-08</Date>
+      <Version>0.2</Version>
+      <Comment>Icon Support</Comment>
+      <Name>Rıdvan Örsvuran</Name>
+      <Email>flasherdn@gmail.com</Email>
+    </Update>
+    <Update release="1">
       <Date>2010-01-24</Date>
       <Version>0.1</Version>
       <Comment>Initial Version</Comment>
       <Name>Rıdvan Örsvuran</Name>
       <Email>flasherdn@gmail.com</Email>
-      </Update>
+    </Update>
   </History>
 </PISI>
